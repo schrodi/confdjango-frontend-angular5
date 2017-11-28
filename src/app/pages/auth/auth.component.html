@@ -1,0 +1,15 @@
+
+<div class="d-flex justify-content-center align-items-center height-full">
+    <mat-card class="force-login-wrapper align-self-center text-center">
+
+        <ng-template [ngIf]="!loggedIn">
+          <auth-login></auth-login>
+        </ng-template>
+        
+        <ng-template [ngIf]="loggedIn">
+          <auth-logout></auth-logout>
+        </ng-template>
+        
+        
+    </mat-card>
+</div>

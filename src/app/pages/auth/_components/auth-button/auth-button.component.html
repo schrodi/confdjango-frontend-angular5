@@ -1,0 +1,7 @@
+<ng-template [ngIf]="!loggedIn">
+  <button mat-raised-button color="primary" routerLink="auth" >Login</button>
+</ng-template>
+
+<ng-template [ngIf]="loggedIn">
+    <button mat-raised-button color="warn" routerLink="auth">Logout</button>
+</ng-template>
